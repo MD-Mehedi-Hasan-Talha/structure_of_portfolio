@@ -66,54 +66,18 @@
   width: 60px;
   height: 350px;
   top: -30%;
-  left: 29%;
+  right: 55%;
   z-index: -1;
   transform: rotate(45deg);
 }
 
-@media screen and (min-width: 700px) {
-  .desined-bar::after {
-    top: -30%;
-    left: 47%;
-  }
-
-  .desined-bar::before {
-    top: -33%;
-    left: 34%;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .desined-bar::after {
-    top: -27%;
-    left: 50%;
-  }
-
-  .desined-bar::before {
-    top: -33%;
-    left: 41%;
-  }
-}
-
 @media screen and (min-width: 950px) {
   .desined-bar::after {
-    top: -28%;
     width: 60px;
     height: 400px;
   }
 
   .desined-bar::before {
-    top: -5rem;
-    left: 10rem;
-    width: 60px;
-    height: 400px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .desined-bar::before {
-    top: -5rem;
-    left: 12rem;
     width: 60px;
     height: 400px;
   }
