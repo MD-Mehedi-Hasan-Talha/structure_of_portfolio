@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  transition: all 0.5s;
+  transform: translateX(-999px);
+}
+
+.active {
+  @apply bg-secondary text-primary;
+}
+
+.active:hover::after {
+  display: none;
+}
+
+.nav-item::after {
+  @apply bg-secondary;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  left: 43%;
+  border-radius: 0.5px;
+  transition: all 0.5s;
+}
+
+.nav-item:hover::after {
+  width: 10%;
+  transform: scaleX(9);
+}
+
+.animation {
+  transform: rotate(180deg);
+  left: -30px;
+}
+
+.outside-of-navber {
+  display: none;
+}
+
+.clicked {
+  display: block;
+}
+
+.desined-bar {
+  z-index: 1;
+}
+
+.desined-bar::after {
+  @apply bg-gradient-to-b from-primary to-secondary absolute rounded-full;
+  content: "";
+  width: 60px;
+  height: 350px;
+  top: -33%;
+  left: 50%;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.desined-bar::before {
+  @apply bg-gradient-to-t from-primary to-secondary absolute rounded-full;
+  content: "";
+  width: 60px;
+  height: 350px;
+  top: -30%;
+  left: 29%;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+@media screen and (min-width: 700px) {
+  .desined-bar::after {
+    top: -30%;
+    left: 47%;
+  }
+
+  .desined-bar::before {
+    top: -33%;
+    left: 34%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .desined-bar::after {
+    top: -27%;
+    left: 50%;
+  }
+
+  .desined-bar::before {
+    top: -33%;
+    left: 41%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .desined-bar::after {
+    top: -28%;
+    width: 60px;
+    height: 400px;
+  }
+
+  .desined-bar::before {
+    top: -5rem;
+    left: 10rem;
+    width: 60px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .desined-bar::before {
+    top: -5rem;
+    left: 12rem;
+    width: 60px;
+    height: 400px;
+  }
+}

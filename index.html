@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROGRAMMING LAB BD</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <!-- <body class="bg-slate-900"> -->
+  <body>
+    <header id="header">
+      <div id="desktop_nav" class="hidden md:block">
+        <nav
+          class="fixed top-0 left-0 right-0 w-screen bg-primary flex justify-between py-2 border-b-[5px] border-secondary"
+        >
+          <div id="logo-area" class="w-[33%]">
+            <img
+              src="img/white_logo.png"
+              alt="Programming LAB BD"
+              class="p-2 ml-6 max-w-[270px]"
+            />
+          </div>
+          <div id="nav-area" class="w-[60%] max-w-[600px] p-[6px]">
+            <ul class="flex justify-evenly items-center">
+              <li
+                class="p-3 text-secondary relative nav-item rounded-md active"
+              >
+                <a href="#" class="flex gap-1 items-center"
+                  ><i class="fa-solid fa-house"></i
+                  ><span class="font-semibold">Home</span></a
+                >
+              </li>
+              <li class="p-3 bg-primary text-secondary relative nav-item">
+                <a href="#" class="flex gap-1 items-center"
+                  ><i class="fa-solid fa-user"></i
+                  ><span class="ml-2 font-semibold">About</span></a
+                >
+              </li>
+              <li class="p-3 bg-primary text-secondary relative nav-item">
+                <a href="#" class="flex gap-1 items-center"
+                  ><i class="fa-solid fa-gear"></i
+                  ><span class="ml-2 font-semibold">Services</span></a
+                >
+              </li>
+              <li class="p-3 bg-primary text-secondary relative nav-item">
+                <a href="#" class="flex gap-1 items-center"
+                  ><i class="fa-solid fa-briefcase"></i
+                  ><span class="ml-2 font-semibold">Portfolio</span></a
+                >
+              </li>
+              <li class="p-3 bg-primary text-secondary relative nav-item">
+                <a href="#" class="flex gap-1 items-center"
+                  ><i class="fa-solid fa-envelope"></i
+                  ><span class="ml-2 font-semibold">Contact</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div id="mobile_nav" class="md:hidden">
+        <div
+          id="mobile_nav_3dot"
+          class="fixed top-4 left-4 text-secondary text-2xl cursor-pointer transition-all z-10"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav
+          class="fixed top-0 left-0 right-0 w-screen bg-primary flex justify-center py-1 border-b-[5px] border-secondary"
+        >
+          <div id="logo-area" class="flex items-center justify-center">
+            <img
+              id="logo"
+              src="img/white_logo.png"
+              alt="Programming LAB BD"
+              class="max-w-[15rem] my-2 cursor-pointer"
+            />
+            <div class=""></div>
+          </div>
+        </nav>
+        <div
+          class="h-screen w-screen bg-[#42424285] z-50 outside-of-navber"
+        ></div>
+        <aside
+          id="nav"
+          class="fixed top-0 h-screen max-w-[280px] bg-primary flex flex-col gap-20 py-10 border-secondary border-r-[5px] rounded-r-[10px] navbar"
+        >
+          <div
+            id="close-area"
+            class="text-secondary text-3xl absolute cursor-pointer top-2 right-2"
+          >
+            <i id="close" class="fa-solid fa-xmark"></i>
+          </div>
+          <div id="logo-area">
+            <img
+              id="logo"
+              src="img/white_logo.png"
+              alt="Programming LAB BD"
+              class="w-3/4 m-auto my-2 cursor-pointer"
+            />
+          </div>
+          <div id="nav-area" class="">
+            <ul>
+              <li
+                class="p-3 bg-primary text-secondary relative nav-item active"
+              >
+                <a href="#" class="nav_link"
+                  ><i class="fa-solid fa-house"></i
+                  ><span class="ml-2 font-semibold">Home</span></a
+                >
+              </li>
+              <li class="p-3 bg-primary text-secondary relative nav-item">
+                <a href="#" class="nav_link"
+                  ><i class="fa-solid fa-user"></i
+                  ><span class="ml-2 font-semibold">About</span></a
+                >
+              </li>
+              <li class="p-3 bg-primary text-secondary relative nav-item">
+                <a href="#" class="nav_link"
+                  ><i class="fa-solid fa-gear"></i
+                  ><span class="ml-2 font-semibold">Services</span></a
+                >
+              </li>
+              <li class="p-3 bg-primary text-secondary relative nav-item">
+                <a href="#" class="nav_link"
+                  ><i class="fa-solid fa-briefcase"></i
+                  ><span class="ml-2 font-semibold">Portfolio</span></a
+                >
+              </li>
+              <li class="p-3 bg-primary text-secondary relative nav-item">
+                <a href="#" class="nav_link"
+                  ><i class="fa-solid fa-envelope"></i
+                  ><span class="ml-2 font-semibold">Contact</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <section
+      id="home"
+      class="w-screen h-screen bg-gradient-to-r from-primary to-secondary"
+    >
+      <div class="bg-primary bg-opacity-70 h-full text-white">
+        <div class="w-5/6 mx-auto pt-20 md:pt-24 md:flex md:items-center md:justify-center md:min-h-full">
+          <div class="flex gap-20 flex-col-reverse md:flex-row justify-between">
+            <div class="text-center md:max-w-[60%]">
+              <h1 class="text-4xl font-semibold mb-3">Hi, I'm</h1>
+              <h2 class="text-3xl mb-3"> MD. Mehedi Hasan Talha</h2>
+              <p class="text-lg mb-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis excepturi possimus error eaque fugiat, quos nisi, aspernatur, porro beatae iste nostrum voluptates voluptatum dicta quasi quidem dolorem delectus. Temporibus, sed!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <span class="hidden md:inline-block">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis excepturi possimus error eaque fugiat, quos nisi, aspernatur, porro beatae iste nostrum voluptates voluptatum dicta quasi quidem dolorem delectus. Temporibus, sed!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis excepturi possimus error eaque fugiat, quos nisi, aspernatur, porro beatae iste nostrum voluptates voluptatum dicta quasi quidem dolorem delectus. Temporibus, sed!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+              </p>
+              <div id="social-link" class="flex justify-evenly">
+                <ul class="flex gap-5">
+                  <li class=""><a href="#" class="text-4xl text-white hover:text-secondary transition-colors"><i class="fa-brands fa-facebook"></i></a></li>
+                  <li class=""><a href="#" class="text-4xl text-white hover:text-secondary transition-colors"><i class="fa-brands fa-x-twitter"></i></a></li>
+                  <li class=""><a href="#" class="text-4xl text-white hover:text-secondary transition-colors"><i class="fa-brands fa-github"></i></a></li>
+                  <li class=""><a href="#" class="text-4xl text-white hover:text-secondary transition-colors"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="pt-20 md:pt-0 md:min-w-[40%]">
+              <div class="relative desined-bar flex items-center justify-center">
+                <div
+                  class="w-[220px] md:w-[260px] h-[220px] md:h-[260px] flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-tr from-primary to-secondary z-10"
+                >
+                  <div class="max-w-[210px] md:max-w-[248px] max-h-[210px] md:max-h-[248px] mx-auto overflow-hidden rounded-full object-center">
+                    <img
+                    src="img/IMG20231003122856.jpg"
+                    alt="MD. Mehedi Hasan Talha"
+                    class=""
+                  />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script/app.js"></script>
+  </body>
+</html>
