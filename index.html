@@ -15,7 +15,7 @@
     <header id="header">
       <div id="desktop_nav" class="hidden md:block bg-transparent">
         <nav
-          class="fixed top-0 left-0 right-0 w-screen bg-primary flex justify-between py-2 border-b-[5px] border-secondary"
+          class="fixed top-0 left-0 right-0 w-screen bg-primary flex justify-between py-2 border-b-[5px] border-secondary z-10"
         >
           <div id="logo-area" class="w-[33%]">
             <img
@@ -65,12 +65,13 @@
       <div id="mobile_nav" class="md:hidden">
         <div
           id="mobile_nav_3dot"
-          class="fixed top-4 left-4 text-secondary text-2xl cursor-pointer transition-all z-50"
+          class="fixed top-4 left-4 text-secondary text-2xl cursor-pointer transition-all z-10"
         >
           <i class="fa-solid fa-bars"></i>
         </div>
         <nav
-          class="fixed top-0 left-0 right-0 w-screen bg-primary flex justify-center py-1 border-b-[5px] border-secondary z-40"
+          id="main_nav"
+          class="fixed top-0 left-0 right-0 w-screen bg-primary flex justify-center py-1 border-b-[5px] border-secondary"
         >
           <div id="logo-area" class="flex items-center justify-center">
             <img
@@ -144,9 +145,9 @@
 
     <section
       id="home"
-      class="w-screen min-h-screen bg-gradient-to-r from-primary to-secondary"
+      class="max-h-1w-screen min-h-screen md:h-screen bg-gradient-to-r from-primary to-secondary"
     >
-      <div class="bg-primary bg-opacity-70 pb-32 text-white">
+      <div class="bg-primary bg-opacity-70 pb-32 md:h-full text-white">
         <div
           class="w-5/6 mx-auto pt-20 md:pt-24 md:flex md:items-center md:justify-center md:min-h-full"
         >
@@ -230,16 +231,333 @@
       </div>
     </section>
 
-    <!-- <section
+    <section
       id="home"
-      class="w-screen min-h-screen bg-gradient-to-r from-primary to-secondary border-t-4 border-secondary"
+      class="max-w-screen min-h-screen bg-gradient-to-r from-primary to-secondary border-t-4 border-secondary"
     >
       <div class="bg-primary bg-opacity-70 h-full text-white">
-        <div
-          class="w-5/6 mx-auto pt-20 md:pt-24 md:flex md:items-center md:justify-center md:min-h-full"
-        >
-        
+        <div class="w-5/6 mx-auto py-20 md:py-44">
+          <div id="heading_are" class="text-center mb-12 md:mb-24">
+            <h1 class="text-4xl font-semibold p-2 border-b-4 inline-block">
+              About me
+            </h1>
+          </div>
+          <div id="" class="flex flex-col-reverse md:flex-row gap-14">
+            <div id="skill_section" class="md:min-w-[40%]">
+              <div class="bg-primary py-6 rounded-md">
+                <div class="text-center">
+                  <h2
+                    class="text-2xl font-semibold inline-block border-b-2 px-2"
+                  >
+                    Skills
+                  </h2>
+                </div>
+                <div class="flex flex-col items-center px-2">
+                  <div class="single_item w-full p-3">
+                    <h3 class="text-lg font-medium uppercase mb-1">html</h3>
+                    <div
+                      class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+                    >
+                      <div
+                        class="bg-secondary h-2.5 rounded-full"
+                        style="width: 85%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="single_item w-full p-3">
+                    <h3 class="text-lg font-medium mb-1">
+                      CSS with TailwindCSS
+                    </h3>
+                    <div
+                      class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+                    >
+                      <div
+                        class="bg-secondary h-2.5 rounded-full"
+                        style="width: 50%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="single_item w-full p-3">
+                    <h3 class="text-lg font-medium mb-1">Javascript</h3>
+                    <div
+                      class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+                    >
+                      <div
+                        class="bg-secondary h-2.5 rounded-full"
+                        style="width: 65%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="single_item w-full p-3">
+                    <h3 class="text-lg font-medium mb-1">
+                      MEN (MongoDB, ExpressJS, NodeJS)
+                    </h3>
+                    <div
+                      class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+                    >
+                      <div
+                        class="bg-secondary h-2.5 rounded-full"
+                        style="width: 35%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="single_item w-full p-3">
+                    <h3 class="text-lg font-medium mb-1">
+                      ReactJS With NextJS
+                    </h3>
+                    <div
+                      class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+                    >
+                      <div
+                        class="bg-secondary h-2.5 rounded-full"
+                        style="width: 55%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="about_text" class="text-lg">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti possimus exercitationem eius dolore rem fugit porro at
+                maiores, nulla magnam iste tempore recusandae et quo accusantium
+                rerum odio, cupiditate nemo quasi vel blanditiis. Culpa repellat
+                quisquam consequuntur dolorem explicabo rem repellendus dolore
+                vel quos exercitationem dicta, laborum accusamus quasi odit
+                tempore. Rerum iure id pariatur commodi velit, nihil repudiandae
+                odit voluptas nobis, voluptate quas cum. Nobis, odit ea! Officia
+                praesentium quisquam sed rem, veniam id non ullam modi dicta
+                maiores a eius asperiores neque iste recusandae! Quis, cumque!
+                Delectus aliquid labore quisquam eaque voluptatum! Ex doloribus
+                quibusdam nihil inventore incidunt? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Deleniti possimus exercitationem
+                eius dolore rem fugit porro at maiores, nulla magnam iste
+                tempore recusandae et quo accusantium rerum odio, cupiditate
+                nemo quasi vel blanditiis. Culpa repellat quisquam consequuntur
+                dolorem explicabo rem repellendus dolore vel quos exercitationem
+                dicta, laborum accusamus quasi odit tempore. Rerum iure id
+                pariatur commodi velit, nihil repudiandae odit voluptas nobis,
+                voluptate quas cum. Nobis, odit ea! Officia praesentium quisquam
+                sed rem, veniam id non ullam modi dicta maiores a eius
+                asperiores neque iste recusandae! Quis, cumque! Delectus aliquid
+                labore quisquam eaque voluptatum! Ex doloribus quibusdam nihil
+                inventore incidunt?
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <section
+      id="home"
+      class="max-w-screen min-h-screen bg-gradient-to-r from-primary to-secondary border-t-4 border-secondary"
+    >
+      <div class="bg-primary bg-opacity-70 h-full text-white">
+        <div class="w-5/6 mx-auto py-20 md:py-44">
+          <div id="heading_are" class="text-center mb-12 md:mb-24">
+            <h1 class="text-4xl font-semibold p-2 border-b-4 inline-block">
+              My Services
+            </h1>
+          </div>
+          <div
+            id="service_items"
+            class="grid gap-6 md:grid-flow-col md:grid-rows-3 lg:grid-rows-2"
+          >
+            <div class="single_item bg-primary rounded-md py-8 px-4">
+              <div class="service_heading text-2xl font-medium text-center">
+                <h2 class="border-b-2 inline-block px-2 pb-2">Web Design</h2>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="icon text-8xl p-6 text-center text-gray-700">
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+                <div class="text text-center text-lg">
+                  <p class="mb-6">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Blanditiis aliquid placeat cupiditate facere, repellat,
+                    quasi quidem quae dolor quos perspiciatis asperiores commodi
+                    alias nam suscipit natus ipsam ab doloribus sint.
+                  </p>
+                  <button
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                  >
+                    Read More >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="single_item bg-primary rounded-md py-8 px-4">
+              <div class="service_heading text-2xl font-medium text-center">
+                <h2 class="border-b-2 inline-block px-2 pb-2">
+                  Web Development
+                </h2>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="icon text-8xl p-6 text-center text-gray-700">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="text text-center text-lg">
+                  <p class="mb-6">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Blanditiis aliquid placeat cupiditate facere, repellat,
+                    quasi quidem quae dolor quos perspiciatis asperiores commodi
+                    alias nam suscipit natus ipsam ab doloribus sint.
+                  </p>
+                  <button
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                  >
+                    Read More >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="single_item bg-primary rounded-md py-8 px-4">
+              <div class="service_heading text-2xl font-medium text-center">
+                <h2 class="border-b-2 inline-block px-2 pb-2">
+                  Application Development
+                </h2>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="icon text-8xl p-6 text-center text-gray-700">
+                  <i class="fa-solid fa-terminal"></i>
+                </div>
+                <div class="text text-center text-lg">
+                  <p class="mb-6">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Blanditiis aliquid placeat cupiditate facere, repellat,
+                    quasi quidem quae dolor quos perspiciatis asperiores commodi
+                    alias nam suscipit natus ipsam ab doloribus sint.
+                  </p>
+                  <button
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                  >
+                    Read More >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="single_item bg-primary rounded-md py-8 px-4">
+              <div class="service_heading text-2xl font-medium text-center">
+                <h2 class="border-b-2 inline-block px-2 pb-2">
+                  Backend Development
+                </h2>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="icon text-8xl p-6 text-center text-gray-700">
+                  <i class="fa-solid fa-server"></i>
+                </div>
+                <div class="text text-center text-lg">
+                  <p class="mb-6">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Blanditiis aliquid placeat cupiditate facere, repellat,
+                    quasi quidem quae dolor quos perspiciatis asperiores commodi
+                    alias nam suscipit natus ipsam ab doloribus sint.
+                  </p>
+                  <button
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                  >
+                    Read More >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="single_item bg-primary rounded-md py-8 px-4">
+              <div class="service_heading text-2xl font-medium text-center">
+                <h2 class="border-b-2 inline-block px-2 pb-2">
+                  Database Management
+                </h2>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="icon text-8xl p-6 text-center text-gray-700">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="text text-center text-lg">
+                  <p class="mb-6">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Blanditiis aliquid placeat cupiditate facere, repellat,
+                    quasi quidem quae dolor quos perspiciatis asperiores commodi
+                    alias nam suscipit natus ipsam ab doloribus sint.
+                  </p>
+                  <button
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                  >
+                    Read More >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="single_item bg-primary rounded-md py-8 px-4">
+              <div class="service_heading text-2xl font-medium text-center">
+                <h2 class="border-b-2 inline-block px-2 pb-2">
+                  Other Services
+                </h2>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="icon text-8xl p-6 text-center text-gray-700">
+                  <i class="fa-solid fa-gears"></i>
+                </div>
+                <div class="text text-center text-lg">
+                  <p class="mb-6">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Blanditiis aliquid placeat cupiditate facere, repellat,
+                    quasi quidem quae dolor quos perspiciatis asperiores commodi
+                    alias nam suscipit natus ipsam ab doloribus sint.
+                  </p>
+                  <button
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                  >
+                    Read More >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section
+      id="home"
+      class="max-w-screen min-h-screen bg-gradient-to-r from-primary to-secondary border-t-4 border-secondary"
+    >
+      <div class="bg-primary bg-opacity-70 h-full text-white">
+        <div class="w-5/6 mx-auto py-20 md:py-44">
+          <div id="heading_are" class="text-center mb-12 md:mb-24">
+            <h1 class="text-4xl font-semibold p-2 border-b-4 inline-block">
+              My Portfolio
+            </h1>
+          </div>
+          <div
+          id="service_items"
+          class="grid gap-6 md:grid-flow-col md:grid-rows-3 lg:grid-rows-2"
+        >
+          <div class="single_item bg-primary rounded-md py-8 px-4">
+            <div class="service_heading text-2xl font-medium text-center">
+              <h2 class="border-b-2 inline-block px-2 pb-2">Web Design</h2>
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="icon text-8xl p-6 text-center text-gray-700">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <div class="text text-center text-lg">
+                <p class="mb-6">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Blanditiis aliquid placeat cupiditate facere, repellat,
+                  quasi quidem quae dolor quos perspiciatis asperiores commodi
+                  alias nam suscipit natus ipsam ab doloribus sint.
+                </p>
+                <button
+                  class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                >
+                  Read More >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
       </div>
     </section> -->
 

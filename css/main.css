@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+#main_nav {
+  z-index: 2;
+}
+
 .navbar {
   transition: all 0.5s;
   transform: translateX(-999px);
