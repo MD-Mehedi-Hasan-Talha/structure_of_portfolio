@@ -87,3 +87,7 @@
     height: 400px;
   }
 }
+
+.info .item:last-child {
+  border-bottom: none;
+}
