@@ -18,42 +18,44 @@
           class="fixed top-0 left-0 right-0 w-screen bg-primary flex justify-between py-2 border-b-[5px] border-secondary z-10"
         >
           <div id="logo-area" class="w-[33%]">
-            <img
-              src="img/white_logo.png"
-              alt="Programming LAB BD"
-              class="p-2 ml-6 max-w-[270px]"
-            />
+            <a href="#home">
+              <img
+                src="img/white_logo.png"
+                alt="Programming LAB BD"
+                class="p-2 ml-6 max-w-[270px]"
+              />
+            </a>
           </div>
-          <div id="nav-area" class="w-[60%] max-w-[600px] p-[6px]">
+          <div id="nav-area" class="w-[60%] max-w-[600px] p-[6px] pr-6">
             <ul class="flex justify-evenly items-center">
               <li
                 class="p-3 text-secondary relative nav-item rounded-md active"
               >
-                <a href="#" class="flex gap-1 items-center"
+                <a href="#home" class="flex gap-1 items-center"
                   ><i class="fa-solid fa-house"></i
                   ><span class="font-semibold">Home</span></a
                 >
               </li>
               <li class="p-3 bg-primary text-secondary relative nav-item">
-                <a href="#" class="flex gap-1 items-center"
+                <a href="#about" class="flex gap-1 items-center"
                   ><i class="fa-solid fa-user"></i
                   ><span class="ml-2 font-semibold">About</span></a
                 >
               </li>
               <li class="p-3 bg-primary text-secondary relative nav-item">
-                <a href="#" class="flex gap-1 items-center"
+                <a href="#service" class="flex gap-1 items-center"
                   ><i class="fa-solid fa-gear"></i
                   ><span class="ml-2 font-semibold">Services</span></a
                 >
               </li>
               <li class="p-3 bg-primary text-secondary relative nav-item">
-                <a href="#" class="flex gap-1 items-center"
+                <a href="#portfolio" class="flex gap-1 items-center"
                   ><i class="fa-solid fa-briefcase"></i
                   ><span class="ml-2 font-semibold">Portfolio</span></a
                 >
               </li>
               <li class="p-3 bg-primary text-secondary relative nav-item">
-                <a href="#" class="flex gap-1 items-center"
+                <a href="#contact" class="flex gap-1 items-center"
                   ><i class="fa-solid fa-envelope"></i
                   ><span class="ml-2 font-semibold">Contact</span></a
                 >
@@ -74,12 +76,14 @@
           class="fixed top-0 left-0 right-0 w-screen bg-primary flex justify-center py-1 border-b-[5px] border-secondary"
         >
           <div id="logo-area" class="flex items-center justify-center">
-            <img
-              id="logo"
-              src="img/white_logo.png"
-              alt="Programming LAB BD"
-              class="max-w-[15rem] my-2 cursor-pointer"
-            />
+            <a href="#home">
+              <img
+                id="logo"
+                src="img/white_logo.png"
+                alt="Programming LAB BD"
+                class="max-w-[15rem] my-2 cursor-pointer"
+              />
+            </a>
           </div>
         </nav>
         <div
@@ -96,43 +100,45 @@
             <i id="close" class="fa-solid fa-xmark"></i>
           </div>
           <div id="logo-area">
-            <img
-              id="logo"
-              src="img/white_logo.png"
-              alt="Programming LAB BD"
-              class="w-3/4 m-auto my-2 cursor-pointer"
-            />
+            <a href="#home">
+              <img
+                id="logo"
+                src="img/white_logo.png"
+                alt="Programming LAB BD"
+                class="w-3/4 m-auto my-2 cursor-pointer"
+              />
+            </a>
           </div>
           <div id="nav-area" class="">
             <ul>
               <li
                 class="p-3 bg-primary text-secondary relative nav-item active"
               >
-                <a href="#" class="nav_link"
+                <a href="#home" class="nav_link"
                   ><i class="fa-solid fa-house"></i
                   ><span class="ml-2 font-semibold">Home</span></a
                 >
               </li>
               <li class="p-3 bg-primary text-secondary relative nav-item">
-                <a href="#" class="nav_link"
+                <a href="#about" class="nav_link"
                   ><i class="fa-solid fa-user"></i
                   ><span class="ml-2 font-semibold">About</span></a
                 >
               </li>
               <li class="p-3 bg-primary text-secondary relative nav-item">
-                <a href="#" class="nav_link"
+                <a href="#service" class="nav_link"
                   ><i class="fa-solid fa-gear"></i
                   ><span class="ml-2 font-semibold">Services</span></a
                 >
               </li>
               <li class="p-3 bg-primary text-secondary relative nav-item">
-                <a href="#" class="nav_link"
+                <a href="#portfolio" class="nav_link"
                   ><i class="fa-solid fa-briefcase"></i
                   ><span class="ml-2 font-semibold">Portfolio</span></a
                 >
               </li>
               <li class="p-3 bg-primary text-secondary relative nav-item">
-                <a href="#" class="nav_link"
+                <a href="#contact" class="nav_link"
                   ><i class="fa-solid fa-envelope"></i
                   ><span class="ml-2 font-semibold">Contact</span></a
                 >
@@ -207,7 +213,7 @@
                 </ul>
               </div>
             </div>
-            <div class="pt-20 md:pt-0 md:min-w-[40%]">
+            <div class="pt-20 md:pt-0 md:min-w-[40%] flex justify-center items-center">
               <div
                 class="relative desined-bar flex items-center justify-center"
               >
@@ -708,22 +714,42 @@
                   <div class="flex flex-col">
                     <div class="form-group mb-6">
                       <label>Name :</label>
-                      <input type="text" class="p-2 w-full bg-[#1c849e] border-2 rounded-lg mt-1" placeholder="Enter Your First Name">
+                      <input
+                        type="text"
+                        class="p-2 w-full bg-[#1c849e] border-2 rounded-lg mt-1"
+                        placeholder="Enter Your First Name"
+                      />
                     </div>
                     <div class="form-group mb-6">
                       <label>Eamil Address :</label>
-                      <input type="text" class="p-2 w-full bg-[#1c849e] border-2 rounded-lg mt-1" placeholder="Enter Your Email Address">
+                      <input
+                        type="text"
+                        class="p-2 w-full bg-[#1c849e] border-2 rounded-lg mt-1"
+                        placeholder="Enter Your Email Address"
+                      />
                     </div>
                     <div class="form-group mb-6">
                       <label>Subject :</label>
-                      <input type="text" class="p-2 w-full bg-[#1c849e] border-2 rounded-lg mt-1" placeholder="Enter Your Subject">
+                      <input
+                        type="text"
+                        class="p-2 w-full bg-[#1c849e] border-2 rounded-lg mt-1"
+                        placeholder="Enter Your Subject"
+                      />
                     </div>
                     <div class="form-group mb-6">
                       <label>Message :</label>
-                      <textarea type="text" class="p-2 w-full bg-[#1c849e] border-2 rounded-lg mt-1" placeholder="Enter Your Message"></textarea>
+                      <textarea
+                        type="text"
+                        class="p-2 w-full bg-[#1c849e] border-2 rounded-lg mt-1"
+                        placeholder="Enter Your Message"
+                      ></textarea>
                     </div>
                     <div class="form-group mb-6 flex justify-center">
-                      <input type="submit" class="border-2 px-6 py-2 rounded-lg cursor-pointer bg-[#1c849e] transition hover:bg-[#105769]" value="Submit">
+                      <input
+                        type="submit"
+                        class="border-2 px-6 py-2 rounded-lg cursor-pointer bg-[#1c849e] transition hover:bg-[#105769]"
+                        value="Submit"
+                      />
                     </div>
                   </div>
                 </form>
@@ -733,6 +759,28 @@
         </div>
       </div>
     </section>
+
+    <footer
+      id="footer"
+      class="max-w-screen bg-gradient-to-r from-primary to-secondary border-t-4 border-secondary"
+    >
+      <div class="bg-primary bg-opacity-95 h-full text-white">
+        <div class="w-5/6 mx-auto py-10 md:py-22">
+          <div id="copy_right" class="text-center">
+            <p>
+              &copy; 2024 Copyright by
+              <a href="#" class="underline text-secondary">Programming LAB BD</a
+              >. Developed By
+              <a
+                href="https://www.facebook.com/profile.php?id=100082335716805"
+                class="underline text-secondary"
+                >MD. Mehedi Hasan Talha</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script type="module" src="script/app.js"></script>
   </body>
