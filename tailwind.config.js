@@ -1,18 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["*"],
+  darkMode: "media",
   theme: {
     screens: {
       md: "950px",
-      lg: "1500px"
+      lg: "1500px",
     },
     extend: {
       fontFamily: {
         // "...": "..."
       },
       colors: {
-        primary: "#111827",
-        secondary: "#0891b2",
+        primary: "var(--color-primary)",
+        primary_transparent: "var(--color-primary-transparent)",
+        text_primary: "var(--color-text_primary)",
+        text_secondary: "var(--color-text_secondary)",
+        input_primary: "var(--color-input_primary)",
+        full_screen_shadow: "var(--color-full_screen_shadow)",
+        secondary: "var(--color-secondary)",
+        hover_secondary: "var(--color-hover_secondary)",
       },
     },
   },

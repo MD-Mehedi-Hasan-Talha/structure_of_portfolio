@@ -17,7 +17,16 @@
         <nav
           class="fixed top-0 left-0 right-0 w-screen bg-primary flex justify-between py-2 border-b-[5px] border-secondary z-10"
         >
-          <div id="logo-area" class="w-[33%]">
+          <div id="logo-area" class="w-[33%] dark:hidden">
+            <a href="#home">
+              <img
+                src="img/black_logo.png"
+                alt="Programming LAB BD"
+                class="p-2 ml-6 max-w-[270px]"
+              />
+            </a>
+          </div>
+          <div id="logo-area" class="w-[33%] hidden dark:inline-block">
             <a href="#home">
               <img
                 src="img/white_logo.png"
@@ -75,7 +84,17 @@
           id="main_nav"
           class="fixed top-0 left-0 right-0 w-screen bg-primary flex justify-center py-1 border-b-[5px] border-secondary"
         >
-          <div id="logo-area" class="flex items-center justify-center">
+          <div id="logo-area" class="flex items-center justify-center dark:hidden">
+            <a href="#home">
+              <img
+                id="logo"
+                src="img/black_logo.png"
+                alt="Programming LAB BD"
+                class="max-w-[15rem] my-2 cursor-pointer"
+              />
+            </a>
+          </div>
+          <div id="logo-area" class="items-center justify-center hidden dark:flex">
             <a href="#home">
               <img
                 id="logo"
@@ -87,7 +106,7 @@
           </div>
         </nav>
         <div
-          class="h-screen w-screen bg-[#111827b3] fixed z-20 outside-of-navber"
+          class="h-screen w-screen bg-full_screen_shadow fixed z-20 outside-of-navber"
         ></div>
         <aside
           id="nav"
@@ -99,7 +118,17 @@
           >
             <i id="close" class="fa-solid fa-xmark"></i>
           </div>
-          <div id="logo-area">
+          <div id="logo-area" class="dark:hidden">
+            <a href="#home">
+              <img
+                id="logo"
+                src="img/black_logo.png"
+                alt="Programming LAB BD"
+                class="w-3/4 m-auto my-2 cursor-pointer"
+              />
+            </a>
+          </div>
+          <div id="logo-area" class="hidden dark:inline-block">
             <a href="#home">
               <img
                 id="logo"
@@ -151,11 +180,11 @@
 
     <section
       id="home"
-      class="max-h-1w-screen min-h-screen md:h-screen bg-gradient-to-r from-primary to-secondary"
+      class="max-w-screen min-h-screen md:h-screen bg-gradient-to-r from-primary to-secondary"
     >
-      <div class="bg-primary bg-opacity-70 pb-32 md:h-full text-white">
+      <div class="bg-primary_transparent pb-32 md:h-full text-text_primary">
         <div
-          class="w-5/6 mx-auto pt-20 md:pt-24 md:flex md:items-center md:justify-center md:min-h-full"
+          class="w-5/6 bg-opacity-100 mx-auto pt-20 md:pt-24 md:flex md:items-center md:justify-center md:min-h-full"
         >
           <div class="flex gap-20 flex-col-reverse md:flex-row justify-between">
             <div class="text-center md:max-w-[60%]">
@@ -185,35 +214,37 @@
                   <li class="">
                     <a
                       href="#"
-                      class="text-4xl text-white hover:text-secondary transition-colors"
+                      class="text-4xl text-text_primary hover:text-secondary transition-colors"
                       ><i class="fa-brands fa-facebook"></i
                     ></a>
                   </li>
                   <li class="">
                     <a
                       href="#"
-                      class="text-4xl text-white hover:text-secondary transition-colors"
+                      class="text-4xl text-text_primary hover:text-secondary transition-colors"
                       ><i class="fa-brands fa-x-twitter"></i
                     ></a>
                   </li>
                   <li class="">
                     <a
                       href="#"
-                      class="text-4xl text-white hover:text-secondary transition-colors"
+                      class="text-4xl text-text_primary hover:text-secondary transition-colors"
                       ><i class="fa-brands fa-github"></i
                     ></a>
                   </li>
                   <li class="">
                     <a
                       href="#"
-                      class="text-4xl text-white hover:text-secondary transition-colors"
+                      class="text-4xl text-text_primary hover:text-secondary transition-colors"
                       ><i class="fa-brands fa-linkedin"></i
                     ></a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="pt-20 md:pt-0 md:min-w-[40%] flex justify-center items-center">
+            <div
+              class="pt-20 md:pt-0 md:min-w-[40%] flex justify-center items-center"
+            >
               <div
                 class="relative desined-bar flex items-center justify-center"
               >
@@ -241,7 +272,7 @@
       id="about"
       class="max-w-screen min-h-screen bg-gradient-to-r from-primary to-secondary border-t-4 border-secondary"
     >
-      <div class="bg-primary bg-opacity-70 h-full text-white">
+      <div class="bg-primary_transparent h-full text-text_primary">
         <div class="w-5/6 mx-auto py-20 md:py-44">
           <div id="heading_are" class="text-center mb-12 md:mb-24">
             <h1 class="text-4xl font-semibold p-2 border-b-4 inline-block">
@@ -249,11 +280,11 @@
             </h1>
           </div>
           <div id="" class="flex flex-col-reverse md:flex-row gap-14">
-            <div id="skill_section" class="md:min-w-[40%]">
+            <div id="skill_section" class="md:min-w-[40%] text-text_secondary">
               <div class="bg-primary py-6 rounded-md">
                 <div class="text-center">
                   <h2
-                    class="text-2xl font-semibold inline-block border-b-2 px-2"
+                    class="text-2xl font-semibold inline-block border-b-2 border-text_secondary px-2"
                   >
                     Skills
                   </h2>
@@ -262,7 +293,7 @@
                   <div class="single_item w-full p-3">
                     <h3 class="text-lg font-medium uppercase mb-1">html</h3>
                     <div
-                      class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+                      class="w-full rounded-full h-2.5 bg-gray-700"
                     >
                       <div
                         class="bg-secondary h-2.5 rounded-full"
@@ -275,7 +306,7 @@
                       CSS with TailwindCSS
                     </h3>
                     <div
-                      class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+                      class="w-full rounded-full h-2.5 bg-gray-700"
                     >
                       <div
                         class="bg-secondary h-2.5 rounded-full"
@@ -286,7 +317,7 @@
                   <div class="single_item w-full p-3">
                     <h3 class="text-lg font-medium mb-1">Javascript</h3>
                     <div
-                      class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+                      class="w-full rounded-full h-2.5 bg-gray-700"
                     >
                       <div
                         class="bg-secondary h-2.5 rounded-full"
@@ -299,7 +330,7 @@
                       MEN (MongoDB, ExpressJS, NodeJS)
                     </h3>
                     <div
-                      class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+                      class="w-full rounded-full h-2.5 bg-gray-700"
                     >
                       <div
                         class="bg-secondary h-2.5 rounded-full"
@@ -312,7 +343,7 @@
                       ReactJS With NextJS
                     </h3>
                     <div
-                      class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+                      class="w-full rounded-full h-2.5 bg-gray-700"
                     >
                       <div
                         class="bg-secondary h-2.5 rounded-full"
@@ -360,7 +391,7 @@
       id="service"
       class="max-w-screen min-h-screen bg-gradient-to-r from-primary to-secondary border-t-4 border-secondary"
     >
-      <div class="bg-primary bg-opacity-70 h-full text-white">
+      <div class="bg-primary_transparent h-full text-text_primary">
         <div class="w-5/6 mx-auto py-20 md:py-44">
           <div id="heading_are" class="text-center mb-12 md:mb-24">
             <h1 class="text-4xl font-semibold p-2 border-b-4 inline-block">
@@ -371,15 +402,15 @@
             id="service_items"
             class="grid gap-6 md:grid-flow-col md:grid-rows-3 lg:grid-rows-2"
           >
-            <div class="single_item bg-primary rounded-md py-8 px-4">
+            <div class="single_item bg-primary text-text_secondary rounded-md py-8 px-4">
               <div class="service_heading text-2xl font-medium text-center">
-                <h2 class="border-b-2 inline-block px-2 pb-2">Web Design</h2>
+                <h2 class="border-b-2 border-text_secondary inline-block px-2 pb-2">Web Design</h2>
               </div>
               <div class="flex flex-col gap-2">
                 <div class="icon text-8xl p-6 text-center text-gray-700">
                   <i class="fa-solid fa-palette"></i>
                 </div>
-                <div class="text text-center text-lg">
+                <div class="text-center text-lg">
                   <p class="mb-6">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Blanditiis aliquid placeat cupiditate facere, repellat,
@@ -387,24 +418,22 @@
                     alias nam suscipit natus ipsam ab doloribus sint.
                   </p>
                   <button
-                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-hover_secondary"
                   >
                     Read More >
                   </button>
                 </div>
               </div>
             </div>
-            <div class="single_item bg-primary rounded-md py-8 px-4">
+            <div class="single_item bg-primary text-text_secondary rounded-md py-8 px-4">
               <div class="service_heading text-2xl font-medium text-center">
-                <h2 class="border-b-2 inline-block px-2 pb-2">
-                  Web Development
-                </h2>
+                <h2 class="border-b-2 border-text_secondary inline-block px-2 pb-2">Web Design</h2>
               </div>
               <div class="flex flex-col gap-2">
                 <div class="icon text-8xl p-6 text-center text-gray-700">
-                  <i class="fa-solid fa-code"></i>
+                  <i class="fa-solid fa-palette"></i>
                 </div>
-                <div class="text text-center text-lg">
+                <div class="text-center text-lg">
                   <p class="mb-6">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Blanditiis aliquid placeat cupiditate facere, repellat,
@@ -412,24 +441,22 @@
                     alias nam suscipit natus ipsam ab doloribus sint.
                   </p>
                   <button
-                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-hover_secondary"
                   >
                     Read More >
                   </button>
                 </div>
               </div>
             </div>
-            <div class="single_item bg-primary rounded-md py-8 px-4">
+            <div class="single_item bg-primary text-text_secondary rounded-md py-8 px-4">
               <div class="service_heading text-2xl font-medium text-center">
-                <h2 class="border-b-2 inline-block px-2 pb-2">
-                  Application Development
-                </h2>
+                <h2 class="border-b-2 border-text_secondary inline-block px-2 pb-2">Web Design</h2>
               </div>
               <div class="flex flex-col gap-2">
                 <div class="icon text-8xl p-6 text-center text-gray-700">
-                  <i class="fa-solid fa-terminal"></i>
+                  <i class="fa-solid fa-palette"></i>
                 </div>
-                <div class="text text-center text-lg">
+                <div class="text-center text-lg">
                   <p class="mb-6">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Blanditiis aliquid placeat cupiditate facere, repellat,
@@ -437,24 +464,22 @@
                     alias nam suscipit natus ipsam ab doloribus sint.
                   </p>
                   <button
-                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-hover_secondary"
                   >
                     Read More >
                   </button>
                 </div>
               </div>
             </div>
-            <div class="single_item bg-primary rounded-md py-8 px-4">
+            <div class="single_item bg-primary text-text_secondary rounded-md py-8 px-4">
               <div class="service_heading text-2xl font-medium text-center">
-                <h2 class="border-b-2 inline-block px-2 pb-2">
-                  Backend Development
-                </h2>
+                <h2 class="border-b-2 border-text_secondary inline-block px-2 pb-2">Web Design</h2>
               </div>
               <div class="flex flex-col gap-2">
                 <div class="icon text-8xl p-6 text-center text-gray-700">
-                  <i class="fa-solid fa-server"></i>
+                  <i class="fa-solid fa-palette"></i>
                 </div>
-                <div class="text text-center text-lg">
+                <div class="text-center text-lg">
                   <p class="mb-6">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Blanditiis aliquid placeat cupiditate facere, repellat,
@@ -462,24 +487,22 @@
                     alias nam suscipit natus ipsam ab doloribus sint.
                   </p>
                   <button
-                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-hover_secondary"
                   >
                     Read More >
                   </button>
                 </div>
               </div>
             </div>
-            <div class="single_item bg-primary rounded-md py-8 px-4">
+            <div class="single_item bg-primary text-text_secondary rounded-md py-8 px-4">
               <div class="service_heading text-2xl font-medium text-center">
-                <h2 class="border-b-2 inline-block px-2 pb-2">
-                  Database Management
-                </h2>
+                <h2 class="border-b-2 border-text_secondary inline-block px-2 pb-2">Web Design</h2>
               </div>
               <div class="flex flex-col gap-2">
                 <div class="icon text-8xl p-6 text-center text-gray-700">
-                  <i class="fa-solid fa-database"></i>
+                  <i class="fa-solid fa-palette"></i>
                 </div>
-                <div class="text text-center text-lg">
+                <div class="text-center text-lg">
                   <p class="mb-6">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Blanditiis aliquid placeat cupiditate facere, repellat,
@@ -487,24 +510,22 @@
                     alias nam suscipit natus ipsam ab doloribus sint.
                   </p>
                   <button
-                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-hover_secondary"
                   >
                     Read More >
                   </button>
                 </div>
               </div>
             </div>
-            <div class="single_item bg-primary rounded-md py-8 px-4">
+            <div class="single_item bg-primary text-text_secondary rounded-md py-8 px-4">
               <div class="service_heading text-2xl font-medium text-center">
-                <h2 class="border-b-2 inline-block px-2 pb-2">
-                  Other Services
-                </h2>
+                <h2 class="border-b-2 border-text_secondary inline-block px-2 pb-2">Web Design</h2>
               </div>
               <div class="flex flex-col gap-2">
                 <div class="icon text-8xl p-6 text-center text-gray-700">
-                  <i class="fa-solid fa-gears"></i>
+                  <i class="fa-solid fa-palette"></i>
                 </div>
-                <div class="text text-center text-lg">
+                <div class="text-center text-lg">
                   <p class="mb-6">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Blanditiis aliquid placeat cupiditate facere, repellat,
@@ -512,14 +533,14 @@
                     alias nam suscipit natus ipsam ab doloribus sint.
                   </p>
                   <button
-                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-hover_secondary"
                   >
                     Read More >
                   </button>
                 </div>
               </div>
             </div>
-          </div>
+          </div>  
         </div>
       </div>
     </section>
@@ -528,7 +549,7 @@
       id="portfolio"
       class="max-w-screen min-h-screen bg-gradient-to-r from-primary to-secondary border-t-4 border-secondary"
     >
-      <div class="bg-primary bg-opacity-70 h-full text-white">
+      <div class="bg-primary_transparent h-full text-text_primary">
         <div class="w-5/6 mx-auto py-20 md:py-44">
           <div id="heading_are" class="text-center mb-12 md:mb-24">
             <h1 class="text-4xl font-semibold p-2 border-b-4 inline-block">
@@ -544,7 +565,7 @@
                 <div class="image mb-2">
                   <img src="img/portfolio_1.jpg" alt="" srcset="" />
                 </div>
-                <div class="text text-center text-lg">
+                <div class="text-center text-text_secondary text-lg">
                   <p class="mb-6">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Blanditiis aliquid placeat cupiditate facere, repellat,
@@ -552,7 +573,7 @@
                     alias nam suscipit natus ipsam ab doloribus sint.
                   </p>
                   <button
-                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-hover_secondary"
                   >
                     Read More >
                   </button>
@@ -562,9 +583,9 @@
             <div class="single_item bg-primary rounded-md p-4 pb-8">
               <div class="flex flex-col gap-2">
                 <div class="image mb-2">
-                  <img src="img/portfolio_2.jpg" alt="" srcset="" />
+                  <img src="img/portfolio_1.jpg" alt="" srcset="" />
                 </div>
-                <div class="text text-center text-lg">
+                <div class="text-center text-text_secondary text-lg">
                   <p class="mb-6">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Blanditiis aliquid placeat cupiditate facere, repellat,
@@ -572,7 +593,7 @@
                     alias nam suscipit natus ipsam ab doloribus sint.
                   </p>
                   <button
-                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-hover_secondary"
                   >
                     Read More >
                   </button>
@@ -582,9 +603,9 @@
             <div class="single_item bg-primary rounded-md p-4 pb-8">
               <div class="flex flex-col gap-2">
                 <div class="image mb-2">
-                  <img src="img/portfolio_3.jpg" alt="" srcset="" />
+                  <img src="img/portfolio_1.jpg" alt="" srcset="" />
                 </div>
-                <div class="text text-center text-lg">
+                <div class="text-center text-text_secondary text-lg">
                   <p class="mb-6">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Blanditiis aliquid placeat cupiditate facere, repellat,
@@ -592,7 +613,7 @@
                     alias nam suscipit natus ipsam ab doloribus sint.
                   </p>
                   <button
-                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-hover_secondary"
                   >
                     Read More >
                   </button>
@@ -602,9 +623,9 @@
             <div class="single_item bg-primary rounded-md p-4 pb-8">
               <div class="flex flex-col gap-2">
                 <div class="image mb-2">
-                  <img src="img/portfolio_4.jpg" alt="" srcset="" />
+                  <img src="img/portfolio_1.jpg" alt="" srcset="" />
                 </div>
-                <div class="text text-center text-lg">
+                <div class="text-center text-text_secondary text-lg">
                   <p class="mb-6">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Blanditiis aliquid placeat cupiditate facere, repellat,
@@ -612,7 +633,7 @@
                     alias nam suscipit natus ipsam ab doloribus sint.
                   </p>
                   <button
-                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-hover_secondary"
                   >
                     Read More >
                   </button>
@@ -622,9 +643,9 @@
             <div class="single_item bg-primary rounded-md p-4 pb-8">
               <div class="flex flex-col gap-2">
                 <div class="image mb-2">
-                  <img src="img/portfolio_5.jpg" alt="" srcset="" />
+                  <img src="img/portfolio_1.jpg" alt="" srcset="" />
                 </div>
-                <div class="text text-center text-lg">
+                <div class="text-center text-text_secondary text-lg">
                   <p class="mb-6">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Blanditiis aliquid placeat cupiditate facere, repellat,
@@ -632,7 +653,7 @@
                     alias nam suscipit natus ipsam ab doloribus sint.
                   </p>
                   <button
-                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-hover_secondary"
                   >
                     Read More >
                   </button>
@@ -642,9 +663,9 @@
             <div class="single_item bg-primary rounded-md p-4 pb-8">
               <div class="flex flex-col gap-2">
                 <div class="image mb-2">
-                  <img src="img/portfolio_6.jpg" alt="" srcset="" />
+                  <img src="img/portfolio_1.jpg" alt="" srcset="" />
                 </div>
-                <div class="text text-center text-lg">
+                <div class="text-center text-text_secondary text-lg">
                   <p class="mb-6">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Blanditiis aliquid placeat cupiditate facere, repellat,
@@ -652,7 +673,7 @@
                     alias nam suscipit natus ipsam ab doloribus sint.
                   </p>
                   <button
-                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-[#067793]"
+                    class="px-6 py-[12px] bg-secondary rounded-md text-primary font-medium hover:bg-hover_secondary"
                   >
                     Read More >
                   </button>
@@ -668,7 +689,7 @@
       id="contact"
       class="max-w-screen min-h-screen bg-gradient-to-r from-primary to-secondary border-t-4 border-secondary"
     >
-      <div class="bg-primary bg-opacity-70 h-full text-white">
+      <div class="bg-primary_transparent h-full text-text_primary">
         <div class="w-5/6 mx-auto py-20 md:py-44">
           <div id="heading_are" class="text-center mb-12 md:mb-24">
             <h1 class="text-4xl font-semibold p-2 border-b-4 inline-block">
@@ -677,8 +698,8 @@
           </div>
           <div class="w-full h-full bg-primary bg-opacity-50 rounded-lg p-8">
             <div class="flex flex-col md:flex-row gap-4">
-              <div class="info md:w-[50%]">
-                <div class="item flex gap-3 py-4 border-b-2 mb-4">
+              <div class="info md:w-[50%] text-text_secondary">
+                <div class="item flex gap-3 py-4 border-b-2 border-text_secondary mb-4">
                   <div class="icon text-xl">
                     <i class="fa-solid fa-location-dot"></i>
                   </div>
@@ -687,7 +708,7 @@
                     <p>198 West 21th Street, Suite 721 New York NY 10016</p>
                   </div>
                 </div>
-                <div class="item flex gap-3 py-4 border-b-2 mb-4">
+                <div class="item flex gap-3 py-4 border-b-2 border-text_secondary mb-4">
                   <div class="icon text-xl">
                     <i class="fa-solid fa-phone"></i>
                   </div>
@@ -696,7 +717,7 @@
                     <p>+880 12345 67890</p>
                   </div>
                 </div>
-                <div class="item flex gap-3 py-4 border-b-2 mb-4">
+                <div class="item flex gap-3 py-4 border-b-2 border-text_secondary mb-4">
                   <div class="icon text-xl">
                     <i class="fa-solid fa-paper-plane"></i>
                   </div>
@@ -716,7 +737,7 @@
                       <label>Name :</label>
                       <input
                         type="text"
-                        class="p-2 w-full bg-[#1c849e] border-2 rounded-lg mt-1"
+                        class="p-2 w-full bg-input_primary border-2 rounded-lg mt-1"
                         placeholder="Enter Your First Name"
                       />
                     </div>
@@ -724,7 +745,7 @@
                       <label>Eamil Address :</label>
                       <input
                         type="text"
-                        class="p-2 w-full bg-[#1c849e] border-2 rounded-lg mt-1"
+                        class="p-2 w-full bg-input_primary border-2 rounded-lg mt-1"
                         placeholder="Enter Your Email Address"
                       />
                     </div>
@@ -732,7 +753,7 @@
                       <label>Subject :</label>
                       <input
                         type="text"
-                        class="p-2 w-full bg-[#1c849e] border-2 rounded-lg mt-1"
+                        class="p-2 w-full bg-input_primary border-2 rounded-lg mt-1"
                         placeholder="Enter Your Subject"
                       />
                     </div>
@@ -740,14 +761,14 @@
                       <label>Message :</label>
                       <textarea
                         type="text"
-                        class="p-2 w-full bg-[#1c849e] border-2 rounded-lg mt-1"
+                        class="p-2 w-full bg-input_primary border-2 rounded-lg mt-1"
                         placeholder="Enter Your Message"
                       ></textarea>
                     </div>
                     <div class="form-group mb-6 flex justify-center">
                       <input
                         type="submit"
-                        class="border-2 px-6 py-2 rounded-lg cursor-pointer bg-[#1c849e] transition hover:bg-[#105769]"
+                        class="border-2 px-6 py-2 rounded-lg cursor-pointer bg-input_primary transition hover:bg-hover_secondary"
                         value="Submit"
                       />
                     </div>
@@ -764,7 +785,7 @@
       id="footer"
       class="max-w-screen bg-gradient-to-r from-primary to-secondary border-t-4 border-secondary"
     >
-      <div class="bg-primary bg-opacity-95 h-full text-white">
+      <div class="bg-primary h-full text-black dark:text-text_primary">
         <div class="w-5/6 mx-auto py-10 md:py-22">
           <div id="copy_right" class="text-center">
             <p>
