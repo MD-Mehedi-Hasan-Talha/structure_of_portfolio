@@ -3,14 +3,13 @@ const nav = document.querySelector("#nav");
 const iii_dot = document.querySelector("#mobile_nav_3dot");
 const outside_of_navber = document.querySelector(".outside-of-navber");
 const nav_item = document.querySelectorAll(".nav_link");
-const logo = document.querySelector("#logo");
 //
 
 //
 
 //
 
-let closer_arr = [close, outside_of_navber, ...nav_item, logo];
+let closer_arr = [close, outside_of_navber, ...nav_item];
 
 //
 
