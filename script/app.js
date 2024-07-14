@@ -22,13 +22,13 @@ let closer_arr = [close, outside_of_navber, ...nav_item];
 iii_dot.addEventListener("click", () => {
   iii_dot.classList.add("animation");
   nav.style.transform = "translateX(0)";
-  outside_of_navber.classList.add("clicked");
+  outside_of_navber.classList.remove("hidden");
 });
 
 closer_arr.map((item) => {
   item.addEventListener("click", (e) => {
     nav.style.transform = "translateX(-999px)";
     iii_dot.classList.remove("animation");
-    outside_of_navber.classList.remove("clicked");
+    outside_of_navber.classList.add("hidden");
   });
 });

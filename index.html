@@ -17,21 +17,13 @@
         <nav
           class="fixed top-0 left-0 right-0 w-screen bg-primary flex justify-between py-2 border-b-[5px] border-secondary z-10"
         >
-          <div id="logo-area" class="w-[33%] dark:hidden">
+          <div id="logo-area" class="w-[33%] max-w-[350px]">
             <a href="#home">
               <img
-                src="img/black_logo.png"
+                id="logo"
+                src="img/logo.png"
                 alt="Programming LAB BD"
-                class="p-2 ml-6 max-w-[270px]"
-              />
-            </a>
-          </div>
-          <div id="logo-area" class="w-[33%] hidden dark:inline-block">
-            <a href="#home">
-              <img
-                src="img/white_logo.png"
-                alt="Programming LAB BD"
-                class="p-2 ml-6 max-w-[270px]"
+                class="w-3/4 m-auto my-2 cursor-pointer dark:invert"
               />
             </a>
           </div>
@@ -82,33 +74,28 @@
         </div>
         <nav
           id="main_nav"
-          class="fixed top-0 left-0 right-0 w-screen bg-primary flex justify-center py-1 border-b-[5px] border-secondary"
+          class="fixed top-0 left-0 right-0 w-screen bg-primary flex justify-center py-1 border-b-[5px] border-secondary z-[2]"
         >
-          <div class="flex items-center justify-center dark:hidden">
+          <div
+            id="logo-area"
+            class="flex items-center justify-center max-w-[350px]"
+          >
             <a href="#home">
               <img
-                src="img/black_logo.png"
+                id="logo"
+                src="img/logo.png"
                 alt="Programming LAB BD"
-                class="max-w-[15rem] my-2 cursor-pointer"
-              />
-            </a>
-          </div>
-          <div class="items-center justify-center hidden dark:flex">
-            <a href="#home">
-              <img
-                src="img/white_logo.png"
-                alt="Programming LAB BD"
-                class="max-w-[15rem] my-2 cursor-pointer"
+                class="w-3/4 m-auto my-2 cursor-pointer dark:invert"
               />
             </a>
           </div>
         </nav>
         <div
-          class="h-screen w-screen bg-full_screen_shadow fixed z-20 outside-of-navber"
+          class="h-screen w-screen bg-full_screen_shadow fixed z-20 outside-of-navber hidden"
         ></div>
         <aside
           id="nav"
-          class="fixed top-0 h-screen max-w-[280px] bg-primary flex flex-col gap-20 py-10 border-secondary border-r-[5px] rounded-r-[10px] navbar z-50"
+          class="fixed top-0 h-screen max-w-[280px] bg-primary flex flex-col gap-20 py-10 border-secondary border-r-[5px] rounded-r-[10px] transition-all duration-500 translate-x-[-999px] z-50"
         >
           <div
             id="close-area"
@@ -116,23 +103,13 @@
           >
             <i id="close" class="fa-solid fa-xmark"></i>
           </div>
-          <div id="logo-area" class="dark:hidden">
+          <div id="logo-area">
             <a href="#home">
               <img
                 id="logo"
-                src="img/black_logo.png"
+                src="img/logo.png"
                 alt="Programming LAB BD"
-                class="w-3/4 m-auto my-2 cursor-pointer"
-              />
-            </a>
-          </div>
-          <div id="logo-area" class="hidden dark:inline-block">
-            <a href="#home">
-              <img
-                id="logo"
-                src="img/white_logo.png"
-                alt="Programming LAB BD"
-                class="w-3/4 m-auto my-2 cursor-pointer"
+                class="w-3/4 m-auto my-2 cursor-pointer dark:invert"
               />
             </a>
           </div>
@@ -244,7 +221,7 @@
               class="pt-20 md:pt-0 md:min-w-[40%] flex justify-center items-center"
             >
               <div
-                class="relative desined-bar flex items-center justify-center"
+                class="relative desined-bar z-[1] flex items-center justify-center"
               >
                 <div
                   class="w-[220px] md:w-[260px] h-[220px] md:h-[260px] flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-tr from-primary to-secondary z-10"
@@ -253,7 +230,7 @@
                     class="max-w-[210px] md:max-w-[248px] max-h-[210px] md:max-h-[248px] mx-auto overflow-hidden rounded-full object-center"
                   >
                     <img
-                      src="img/IMG20231003122856.jpg"
+                      src="img/pic.png"
                       alt="MD. Mehedi Hasan Talha"
                       class=""
                     />
@@ -724,7 +701,7 @@
             <div class="flex flex-col md:flex-row gap-4">
               <div class="info md:w-[50%] text-text_secondary">
                 <div
-                  class="item flex gap-3 py-4 border-b-2 border-text_secondary mb-4"
+                  class="flex gap-3 py-4 border-b-2 border-text_secondary mb-4"
                 >
                   <div class="icon text-xl">
                     <i class="fa-solid fa-location-dot"></i>
@@ -735,7 +712,7 @@
                   </div>
                 </div>
                 <div
-                  class="item flex gap-3 py-4 border-b-2 border-text_secondary mb-4"
+                  class="flex gap-3 py-4 border-b-2 border-text_secondary mb-4"
                 >
                   <div class="icon text-xl">
                     <i class="fa-solid fa-phone"></i>
@@ -746,7 +723,7 @@
                   </div>
                 </div>
                 <div
-                  class="item flex gap-3 py-4 border-b-2 border-text_secondary mb-4"
+                  class="flex gap-3 py-4 border-b-2 border-text_secondary mb-4 last:border-0"
                 >
                   <div class="icon text-xl">
                     <i class="fa-solid fa-paper-plane"></i>
